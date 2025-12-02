@@ -1,40 +1,95 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>AmanTaxi Track</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<header>
-    <div class="header-top">
-        <div>
-            <img src="img/aman-logo.png" alt="AmanTaxi logo" usemap="#amanMap">
-            <map name="amanMap">
-                <area shape="rect" coords="0,0,200,80" href="about.html" alt="About AmanTaxi">
-            </map>
+    <header>
+        <div class="header-top">
+            <div>
+                <img src="img/aman-logo.png" alt="AmanTaxi logo" usemap="#amanMap">
+                <map name="amanMap">
+                    <area shape="rect" coords="0,0,200,80" href="about.html" alt="About AmanTaxi">
+                </map>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="track.html">Track</a></li>
+                    <li><a href="#" onclick="toggleDarkMode(); return false;">Dark/Light mode</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Signup</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="track.html">Track</a></li>
-                <li><a href="#" onclick="toggleDarkMode(); return false;">Dark/Light mode</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </header>
 
-<main>
+    <main>
+        <section class="panel">
+            <h1>Track my child</h1>
+            <p>
+                This page is a prototype to show how parents can follow the journey.
+                It uses an embedded map and two live video streams.
+            </p>
+        </section>
 
-</main>
+        <section class="panel">
+            <h2>Live map (Google Maps)</h2>
+            <iframe width="100%" height="300" style="border:0;" loading="lazy" allowfullscreen
+                src="https://www.google.com/maps/">
+            </iframe>
+        </section>
 
-<footer>
-    &copy; 2025 AmanTaxi Prototype
-</footer>
+        <section class="panel">
+            <h2>Inside camera (Quran live)</h2>
+            <iframe width="100%" height="300" src="https://www.youtube.com/live/wVIE8ShJspw?si=rCIkQOn08tAfSfP7"
+                allowfullscreen>
+            </iframe>
+        </section>
 
-<script src="js/aman.js"></script>
+        <section class="panel">
+            <h2>Front camera (NASA live)</h2>
+            <iframe width="100%" height="300" src="https://www.youtube.com/live/Ni-YkkvH6DQ?si=x0TNzQaPuRYDpT6o"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section class="panel">
+            <h2>Status and safety</h2>
+            <table>
+                <tr>
+                    <th>Child</th>
+                    <th>Driver</th>
+                    <th>Car</th>
+                    <th>Plate</th>
+                    <th>Trip status</th>
+                </tr>
+                <tr>
+                    <td>Example child</td>
+                    <td>Example driver</td>
+                    <td>White Sedan</td>
+                    <td>1234 ABC</td>
+                    <td>On the way (demo)</td>
+                </tr>
+            </table>
+            <p style="margin-top:10px;">
+                <button class="btn-danger" onclick="alert('SOS sent to AmanTaxi control centre (demo).');">
+                    SOS
+                </button>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 AmanTaxi Prototype
+    </footer>
+
+    <script src="js/aman.js"></script>
 </body>
+
 </html>

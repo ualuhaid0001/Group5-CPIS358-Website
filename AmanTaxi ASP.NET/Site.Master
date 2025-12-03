@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="AmanTaxi.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title placeholder -->
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+
+    <!-- Your AmanTaxi CSS -->
+    <link rel="stylesheet" href="AmanTaxi html/styles.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!-- HEADER + NAVIGATION -->
+        <header>
+            <div class="header-top">
+                <div class="logo-area">
+                    <img src="AmanTaxi html/aman-logo.png" alt="AmanTaxi logo" />
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="Default.aspx">Home</a></li>
+                        <li><a href="Login.aspx">Login</a></li>
+                        <li><a href="About.aspx">About us</a></li>
+                        <li><a href="Track.aspx">Track</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- MAIN PAGE CONTENT -->
+        <main>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            &copy; <%: DateTime.Now.Year %> AmanTaxi – Safe ride for children
+        </footer>
+
+        <!-- Your AmanTaxi JavaScript -->
+        <script src="AmanTaxi html/aman.js"></script>
+    </form>
+</body>
+</html>

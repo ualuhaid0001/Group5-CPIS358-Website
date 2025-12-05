@@ -28,6 +28,7 @@
                         <li><a href="Login.aspx">Login</a></li>
                         <li><a href="About.aspx">About us</a></li>
                         <li><a href="Track.aspx">Track</a></li>
+                        <li><a href="#" onclick="toggleDarkMode(); return false;">Dark/Light mode</a></li>
                     </ul>
                 </nav>
             </div>

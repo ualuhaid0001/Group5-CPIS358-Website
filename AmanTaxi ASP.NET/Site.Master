@@ -9,7 +9,7 @@
     <!-- Page title placeholder -->
     <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
 
-    <!-- Your AmanTaxi CSS -->
+    <!-- AmanTaxi CSS -->
     <link rel="stylesheet" href="AmanTaxi html/styles.css" />
 </head>
 <body>
@@ -43,7 +43,7 @@
             &copy; <%: DateTime.Now.Year %> AmanTaxi – Safe ride for children
         </footer>
 
-        <!-- Your AmanTaxi JavaScript -->
+        <!-- AmanTaxi JavaScript -->
         <script src="AmanTaxi html/aman.js"></script>
     </form>
 </body>
